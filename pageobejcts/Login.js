@@ -6,7 +6,7 @@ class Login {
    */
   constructor(page) {
     this.page = page;
-    // this.MyAccount=
+    this.MyAccount=page.getByRole('link', { name: 'MyAccount' }).click
     this.username = page.locator('(//input[@id="outlined-name"])[1]');
     this.password = page.locator('(//input[@id="outlined-name"])[2]');
     this.signIn = page.locator('(//span[normalize-space()="SIGN IN"])[1]');
